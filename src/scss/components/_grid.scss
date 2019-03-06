@@ -1,0 +1,13 @@
+@import "../variables";
+.grid {
+  margin: -$space-xl;
+}
+
+.grid--vertical {
+  margin: -$space-xl * 2 0;
+}
+
+.grid__item {
+  padding: $space-xl;
+  width: calc(100% / 3);
+}

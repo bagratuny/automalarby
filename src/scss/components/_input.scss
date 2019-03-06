@@ -1,0 +1,86 @@
+@import "../variables";
+
+.input {
+  padding: $space-lg $space-lg $space-lg $space-xl * 2;
+  border: none;
+  border-radius: 8px;
+  background: #f3f3f3;
+}
+
+.input--alert {
+  border: 1px solid $color-accent;
+}
+
+.input__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: $space-xl;
+}
+
+.input__title {
+  position: relative;
+  padding-bottom: $space-default;
+  font-size: $fz-sm;
+  font-weight: $font-medium;
+}
+
+.input__title::before {
+  display: block;
+  position: absolute;
+  top: 42px;
+  left: 12px;
+  width: 25px;
+  height: 25px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../img/icons/user.svg");
+  content: "";
+}
+
+.input__confidential-title {
+  position: relative;
+  padding-left: 24px;
+  font-size: $fz-sm;
+  font-weight: $font-medium;
+  text-align: center;
+}
+
+.input__confidential {
+  display: flex;
+  justify-content: center;
+  padding: $space-lg 0;
+}
+
+.input__confidential-checkbox {
+  display: none;
+}
+
+.input__confidential--alert {
+  color: $color-accent;
+}
+
+.input__confidential-title::before {
+  display: block;
+  position: absolute;
+  top: -2px;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  background: url("../img/icons/checkbox_disabled.svg") center no-repeat;
+  background-size: contain;
+  content: "";
+}
+
+.input__confidential-checkbox:checked + .input__confidential-title::before {
+  background: url("../img/icons/checkbox.svg") center no-repeat;
+  background-size: contain;
+}
+
+// .input__wrapper:nth-last-child(1) .input__title::after {
+//   background: url("../img/icons/user.svg") center no-repeat;
+// }
+
+.input__wrapper:nth-child(2) .input__title::before {
+  background-image: url("../img/icons/phone-call.svg");
+}

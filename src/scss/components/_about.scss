@@ -1,0 +1,25 @@
+@import "../variables";
+.about {
+  position: relative;
+}
+
+.about__text {
+  position: relative;
+  width: $space-xl * 30;
+  font-size: $fz-default;
+  font-weight: $font-medium;
+  line-height: 36px;
+}
+
+.about::before {
+  display: block;
+  z-index: -1;
+  position: absolute;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  max-height: 399px;
+  background: url(../img/about.png) right no-repeat;
+  background-size: contain;
+  content: "";
+}

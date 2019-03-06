@@ -1,0 +1,65 @@
+@import "../variables";
+
+.callback {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.callback.section {
+  overflow: visible;
+}
+
+.callback__form {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  min-width: 450px;
+  margin-right: $space-xl * 3;
+  margin-left: $space-xl * 8;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: $shadow;
+}
+
+.callback__form::before {
+  display: block;
+  z-index: -1;
+  position: absolute;
+  top: -10%;
+  left: -48%;
+  width: 120%;
+  height: 120%;
+  background: url("../img/bmw-call.png") no-repeat;
+  background-position: center center;
+  background-size: contain;
+  content: "";
+}
+
+.callback__info {
+  width: 500px;
+}
+
+.callback-info__content {
+  margin-top: $space-lg * 3;
+  margin-left: $space-xl * 3;
+  font-size: $fz-default;
+  font-weight: normal;
+  line-height: $fz-xl/2;
+}
+
+.callback__form--popup {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.popup .callback__form {
+  margin: 0;
+}
+
+.popup .callback__form::before {
+  display: none;
+}

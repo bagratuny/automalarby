@@ -1,0 +1,22 @@
+@import "../variables";
+.form {
+  padding: $space-lg * 2 $space-lg * 2 0 $space-lg * 2;
+  background: #fff;
+}
+
+.form__footer {
+  margin: 0 (-$space-lg * 2);
+  padding: $space-lg $space-lg * 2;
+  border-top: 1px solid #e2e2e2;
+  font-size: 12px;
+  line-height: $fz-default;
+  text-align: center;
+}
+
+.callback__form--popup {
+  padding-top: $space-xl * 2;
+}
+
+.callback__form--popup h4 {
+  padding-bottom: $space-lg;
+}

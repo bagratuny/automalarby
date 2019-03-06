@@ -1,0 +1,102 @@
+@import "../variables";
+
+.services {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.services__item {
+  position: relative;
+  border-radius: 8px;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+  background: linear-gradient(90deg, #ae0f27 0%, #e6193a);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.services__item:hover {
+  transform: translateY(-5px);
+}
+
+.services__item:hover > .services-btn {
+  text-decoration: underline;
+}
+
+.services__wrapper {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  border-radius: 8px;
+  z-index: 0;
+  padding: $space-xl;
+}
+
+.services__item .separator {
+  margin: $space-xl auto;
+}
+
+.services-btn {
+  line-height: $space-xl * 2;
+  font-weight: $font-semibold;
+  font-size: $fz-sm;
+}
+
+.services__price {
+  font-size: $fz-lg;
+  font-weight: $font-bold;
+}
+
+.services__header {
+  font-size: $space-md;
+  line-height: $space-md + 5px;
+}
+
+.services__wrapper::before {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.6);
+  content: "";
+}
+
+.grid__item:nth-child(1) .services__wrapper {
+  background-image: url("../img/images/photo_6.jpg");
+}
+
+.grid__item:nth-child(2) .services__wrapper {
+  background-image: url("../img/images/photo_7.jpg");
+}
+
+.grid__item:nth-child(3) .services__wrapper {
+  background-image: url("../img/images/photo_8.jpg");
+}
+
+.grid__item:nth-child(4) .services__wrapper {
+  background-image: url("../img/images/photo_9.jpg");
+}
+
+.grid__item:nth-child(5) .services__wrapper {
+  background-image: url("../img/images/photo_10.jpg");
+}
+
+.grid__item:nth-child(6) .services__wrapper {
+  background-image: url("../img/images/photo_11.jpg");
+}
+
+.grid__item:nth-child(1) .services__wrapper--camera {
+  background-image: url("../img/images/photo_11.jpg");
+}
+.grid__item:nth-child(2) .services__wrapper--camera {
+  background-image: url("../img/images/photo_11.jpg");
+}
+.grid__item:nth-child(3) .services__wrapper--camera {
+  background-image: url("../img/images/photo_11.jpg");
+}

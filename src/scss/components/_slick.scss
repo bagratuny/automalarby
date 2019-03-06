@@ -1,0 +1,28 @@
+@import "../variables";
+
+.slider-dots {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+
+.slider-dots li {
+  display: inline-block;
+  margin-left: $space-default;
+}
+
+.slider-dots button {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #f8f8f8;
+  border-radius: 50%;
+  background-color: #ffffff;
+  box-shadow: $shadow;
+  color: rgba(0, 0, 0, 0);
+  font-size: 0;
+}
+
+.slick-active button {
+  border-color: #e32c41;
+  background-color: #e32c41;
+}

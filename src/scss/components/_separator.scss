@@ -1,0 +1,12 @@
+@import "../variables";
+
+.separator {
+  display: block;
+  width: $space-xl * 4;
+  height: $space-sm;
+  background-color: $color-accent;
+}
+
+.separator--menu {
+  margin: 0 auto $space-lg * 2;
+}

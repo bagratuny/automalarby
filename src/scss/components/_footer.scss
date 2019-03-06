@@ -1,0 +1,115 @@
+@import "../variables";
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: $space-xl * 12;
+  padding: ($space-lg * 2) 0 ($space-lg * 2) ($space-xl * 10);
+  background-color: $color-background-sidebar;
+  color: #fff;
+}
+
+.footer__body {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.footer__copyright {
+  margin: $space-lg 0 0;
+  color: $color-footer-text;
+  font-size: $fz-sm;
+  font-weight: $font-bold;
+  line-height: $space-lg;
+  text-align: center;
+  text-align: center;
+}
+
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer__phones {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__phone {
+  position: relative;
+  margin-left: 28px;
+  padding-bottom: $space-lg * 2;
+  font-size: $fz-default;
+  font-weight: $font-bold;
+}
+
+.footer__phone::before {
+  display: block;
+  position: absolute;
+  left: -28px;
+  width: $fz-default;
+  height: $fz-default;
+  background: url("../img/social_icons/mts.png") center no-repeat;
+  background-size: contain;
+  content: "";
+}
+
+.footer__phone:nth-child(1)::before {
+  background: url("../img/social_icons/velcom.png") center no-repeat;
+  background-size: contain;
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer__link {
+  display: block;
+  position: relative;
+  width: $space-xl;
+  height: $space-xl;
+}
+
+.footer__link::before {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../img/social_icons/inst.svg") center no-repeat;
+  background-size: contain;
+  content: "";
+}
+
+.footer__link:nth-child(2)::before {
+  background: url("../img/social_icons/vk.svg") center no-repeat;
+  background-size: contain;
+}
+
+.footer__link:nth-child(3)::before {
+  background: url("../img/social_icons/wa.svg") center no-repeat;
+  background-size: contain;
+}
+
+.footer__link:nth-child(4)::before {
+  background: url("../img/social_icons/viber.svg") center no-repeat;
+  background-size: contain;
+}
+
+.footer__link:nth-child(5)::before {
+  background: url("../img/social_icons/telegram.svg") center no-repeat;
+  background-size: contain;
+}
+
+.footer__link:nth-child(6)::before {
+  background: url("../img/social_icons/mail.svg") center no-repeat;
+  background-size: contain;
+}

@@ -1,0 +1,17 @@
+@import "../variables";
+
+.header {
+  display: none;
+  z-index: 20;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: $space-xl * 3;
+  padding: 0 $space-lg;
+  background-color: $color-background-sidebar;
+  transition: all 0.5s;
+  &.scrollUp {
+    transform: translateY(-80px);
+  }
+}

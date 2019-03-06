@@ -1,0 +1,42 @@
+@import "../variables";
+
+.slider__slide {
+  display: flex;
+  flex-direction: row;
+  height: 500px;
+  overflow: hidden;
+  border-radius: $space-default - 2;
+}
+.slider__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 33%;
+  padding: $space-xl * 2;
+  background: url("../img/slider-background.png") center no-repeat;
+  text-align: center;
+}
+.slider__image {
+  width: 67%;
+  background-image: url(../img/slider-image.png);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slider__title {
+  font-size: $fz-xl/2;
+  font-weight: $font-bold;
+  line-height: 36px;
+}
+
+.slider__text {
+  font-size: $fz-default;
+  font-weight: $font-semibold;
+}
+
+.slider__image {
+  max-width: 100%;
+  overflow: hidden;
+}

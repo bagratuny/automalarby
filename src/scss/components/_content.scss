@@ -1,0 +1,7 @@
+@import "../variables";
+.content {
+  max-width: 100%;
+  margin-left: 250px;
+  padding: $space-lg * 3 $space-default * 18;
+  overflow: hidden;
+}

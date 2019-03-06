@@ -1,0 +1,76 @@
+@import "../variables";
+.comment {
+  display: flex;
+  flex-direction: column;
+}
+.comment__block {
+  border-radius: 8px;
+  box-shadow: $shadow;
+  margin: $space-xl * 2 0;
+}
+
+.comment__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: $space-lg * 2;
+}
+
+.comment__author {
+  margin-bottom: $space-xl;
+  font-size: 22px;
+  font-weight: $font-bold;
+  text-transform: uppercase;
+}
+
+.comment__text {
+  font-size: 16px;
+  font-weight: $font-medium;
+  line-height: 24px;
+}
+
+.comment__photo {
+  display: block;
+  min-width: 128px;
+  height: 128px;
+  margin-right: $space-xl * 2;
+  background-repeat: no-repeat !important;
+}
+
+.comment__footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: $space-lg $space-lg * 2;
+  border-top: 1px solid #eeeeee;
+  color: #909090;
+  font-size: $fz-sm;
+  font-weight: $font-semibold;
+}
+
+.comment__link {
+  position: relative;
+  margin-left: $space-xl;
+  line-height: $space-xl;
+}
+
+.comment__link::before {
+  display: block;
+  position: absolute;
+  top: -1px;
+  left: -$space-md * 2;
+  width: $space-xl;
+  height: $space-xl;
+  background: url("../img/social_icons/inst-com.svg") center no-repeat;
+  content: "";
+}
+
+.comment__date {
+  line-height: $space-xl;
+}
+
+.comment__author--hidden {
+  display: none;
+  margin: $space-xl 0;
+  text-align: center;
+}

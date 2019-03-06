@@ -1,0 +1,30 @@
+@import "../variables";
+
+.logo {
+  display: block;
+  width: $space-xl * 6;
+  height: $space-xl * 4;
+  background: url("../img/logo.svg") center no-repeat;
+  background-size: contain;
+}
+
+.logo--large {
+  width: $space-default * 34;
+  background-size: contain;
+}
+
+.logo--sidebar {
+  margin-top: $space-xl * 4;
+}
+
+.contacts__logo {
+  background: url("../img/logo_second.svg") center no-repeat;
+  background-size: contain;
+}
+
+.logo--header {
+  position: relative;
+  top: -8px;
+  width: $space-default * 7;
+  height: $space-xl * 2;
+}

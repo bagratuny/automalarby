@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26.151" height="26.094" viewBox="0 0 26.151 26.094">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_94" data-name="Rectangle 94" width="26.151" height="26.094" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="МТС_Лого" data-name="МТС Лого" transform="translate(0 0)" clip-path="url(#clip-path)">
+    <image id="_1280px-MTS_logo_2015.svg" data-name="1280px-MTS_logo_2015.svg" width="73.086" height="26.094" xlink:href="mts-image.png"/>
+  </g>
+</svg>

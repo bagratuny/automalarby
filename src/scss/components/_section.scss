@@ -1,0 +1,32 @@
+@import "../variables";
+
+.section {
+  display: flex;
+  flex-direction: column;
+  padding: $space-xl * 3 0;
+}
+
+.section__header {
+  margin-left: $space-xl * 3;
+}
+
+.section__content {
+  margin: ($space-xl * 2) 0 0;
+}
+
+.section__content--without-heading {
+  margin: 0;
+}
+
+.section__title {
+  margin-bottom: $space-lg * 2;
+  font-size: $fz-lg;
+}
+
+.section--top {
+  padding-top: 0;
+}
+
+.section--last {
+  padding-bottom: 0;
+}

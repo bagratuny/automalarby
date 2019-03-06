@@ -1,0 +1,103 @@
+@import "../variables";
+.contacts__map {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  height: 500px;
+  padding-right: $space-xl * 4;
+  border-radius: 8px;
+  background: url("../img/map.jpg") center no-repeat;
+  background-size: cover;
+}
+
+.contacts__box {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0px 15px 65px 0px rgba(0, 0, 0, 0.3);
+}
+
+.contacts__side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+  padding: $space-md * 2;
+}
+
+.contacts--links {
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+.contacts__text {
+  margin-bottom: $space-lg * 2;
+  font-size: $fz-sm;
+  font-weight: $font-semibold;
+}
+
+.contacts__image {
+  display: block;
+  width: $space-xl * 3;
+  height: $space-xl * 3;
+  margin-bottom: $space-lg * 2;
+  background: url("../img/mapicon.svg") center no-repeat;
+  background-size: cover;
+}
+
+.contacts__logo {
+  width: 100%;
+  margin-bottom: $space-lg;
+  background-size: contain;
+}
+
+.contacts__point {
+  position: relative;
+  padding-bottom: $space-lg;
+  padding-left: $space-xl * 2;
+  font-size: $fz-sm;
+  font-weight: $font-medium;
+  line-height: 16px;
+}
+
+.contacts__point:last-child {
+  padding-bottom: 0;
+}
+
+.contacts__point::before {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 32px;
+  height: 32px;
+  background-size: contain;
+  content: "";
+}
+
+.contacts__point:nth-child(2)::before {
+  width: 32px;
+  height: 32px;
+  background: url("../img/icons/pin.svg") center no-repeat;
+}
+
+.contacts__point:nth-child(3)::before {
+  top: -8px;
+  background: url("../img/icons/phone-con.svg") center no-repeat;
+}
+
+.contacts__point:nth-child(4)::before {
+  background: url("../img/icons/clock.svg") center no-repeat;
+}
+
+.contacts__point:last-child::before {
+  top: -8px;
+  background: url("../img/icons/mail.svg") center no-repeat;
+}

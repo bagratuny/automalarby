@@ -1,0 +1,20 @@
+@import "../variables";
+
+.menu__item {
+  margin-bottom: $space-lg * 2;
+  font-weight: $font-semibold;
+  text-align: center;
+}
+
+.menu__item--second {
+  margin-bottom: $space-xl;
+  font-weight: $font-medium;
+}
+
+.menu--sidebar {
+  margin: auto 0;
+}
+
+.menu__item--second:last-child {
+  margin: 0;
+}

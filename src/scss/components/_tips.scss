@@ -1,0 +1,49 @@
+@import "../variables";
+
+.tips {
+  margin: -50px 0;
+}
+
+.tips__item {
+  padding-left: $space-xl * 4;
+  position: relative;
+  margin: $space-xl * 2 0;
+}
+
+.tips__header {
+  font-size: 20px;
+  font-weight: $font-bold;
+}
+
+.tips__body {
+  margin-top: $space-default;
+  font-size: 16px;
+  font-weight: $font-medium;
+  line-height: 24px;
+}
+
+.tips__item::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: $space-default * 5;
+  height: $space-default * 5;
+  background-image: url("../img/icons/1.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 0;
+  top: 0;
+}
+
+.tips__item:nth-child(2)::before {
+  background-image: url("../img/icons/2.svg");
+}
+.tips__item:nth-child(3)::before {
+  background-image: url("../img/icons/3.svg");
+}
+.tips__item:nth-child(4)::before {
+  background-image: url("../img/icons/4.svg");
+}
+.tips__item:nth-child(5)::before {
+  background-image: url("../img/icons/5.svg");
+}

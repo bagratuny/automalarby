@@ -1,0 +1,62 @@
+@import "../variables";
+.btn {
+  padding: $space-lg $space-lg + $space-xl;
+  border: none;
+  border-radius: $b-radius;
+  background: $color-button-background;
+  color: $color-background;
+  font-size: $fz-default;
+  font-weight: $font-semibold;
+  text-decoration: none !important;
+}
+
+.btn--callback {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  padding: $space-lg 0;
+  border: none;
+  border-radius: $b-radius;
+  background: $color-button-background;
+  color: $color-background;
+  font-size: $fz-default;
+  font-weight: $font-semibold;
+}
+
+.btn__title-wrapper {
+  position: relative;
+  margin-left: $space-lg;
+}
+
+.btn__title-wrapper::before {
+  display: block;
+  position: absolute;
+  top: -2px;
+  left: -40px;
+  width: 25px;
+  height: 25px;
+  background: url("../img/icons/phone-call-button.svg") center no-repeat;
+  background-size: cover;
+  content: "";
+}
+
+.btn--dark {
+  width: 220px;
+  margin-bottom: $space-md;
+  padding: $space-lg $space-lg * 2;
+  border-radius: 8px;
+  background: #494949;
+  color: #fff;
+  font-size: 18px;
+  font-weight: $font-semibold;
+}
+
+.btn--section {
+  min-width: 100px;
+  margin: $space-xl * 2 auto 0;
+}
+
+.btn--custom_callback {
+  display: inline-block;
+  margin: $space-xl auto;
+}
