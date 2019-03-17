@@ -17,9 +17,25 @@
   background: url("../img/slider-background.png") center no-repeat;
   text-align: center;
 }
-.slider__image {
+.slider__image__1 {
   width: 67%;
-  background-image: url(../img/slider-image.png);
+  background-image: url(../img//slider/slider-image-1.png);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slider__image__2 {
+  width: 67%;
+  background-image: url(../img//slider/slider-image-2.png);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slider__image__3 {
+  width: 67%;
+  background-image: url(../img//slider/slider-image-3.png);
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: cover;
