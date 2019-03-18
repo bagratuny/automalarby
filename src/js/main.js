@@ -17,7 +17,9 @@
   }
 
   function shrinkCommentFooter() {
-    window.innerWidth < 600 ? shrinkElementText(true, $(".comment__link")) : shrinkElementText(false, $(".comment__link"));
+    window.innerWidth < 600
+      ? shrinkElementText(true, $(".comment__link"))
+      : shrinkElementText(false, $(".comment__link"));
   }
 
   function popup(obj) {
@@ -26,8 +28,8 @@
     windowOverflow();
   }
 
-  function popupClose() {
-    $(".popup").fadeOut(200);
+  function popupClose(obj) {
+    $(obj).fadeOut(200);
 
     windowOverflow();
   }
@@ -45,9 +47,15 @@
 
       currentScrollTop = scrollTop;
 
-      if (pastScrollTop < currentScrollTop && scrollTop > navbarHeight + navbarHeight) {
+      if (
+        pastScrollTop < currentScrollTop &&
+        scrollTop > navbarHeight + navbarHeight
+      ) {
         navbar.addClass("scrollUp");
-      } else if (pastScrollTop > currentScrollTop && !(scrollTop <= navbarHeight)) {
+      } else if (
+        pastScrollTop > currentScrollTop &&
+        !(scrollTop <= navbarHeight)
+      ) {
         navbar.removeClass("scrollUp");
       }
       pastScrollTop = currentScrollTop;
@@ -73,7 +81,10 @@
     event.preventDefault();
 
     var id = $(this).attr("href"),
-      top = $(window).innerWidth < 1150 ? $(id).offset().top - 75 : $(id).offset().top;
+      top =
+        $(window).innerWidth < 1150
+          ? $(id).offset().top - 75
+          : $(id).offset().top;
 
     $("body,html").animate({ scrollTop: top }, 500);
   });
@@ -104,13 +115,15 @@
     popup(".popup.callback");
   });
 
-  $(".popup").on("click", popupClose);
+  $(".popup").on("click", e => {
+    popupClose(e.target);
+  });
 
-  $(".popup__close").on("click", popupClose);
+  $(".popup__close").on("click", e => {
+    popupClose($(e.target.closest(".popup")));
+  });
 
   $(".popup__wrapper, .callback__form--popup").on("click", function(e) {
     e.stopPropagation();
   });
-
-  // ----- POPUP
 })();
