@@ -120,7 +120,7 @@
   });
 
   $(".popup__close").on("click", e => {
-    popupClose($(e.target.closest(".popup")));
+    popupClose(e.target.closest(".popup"));
   });
 
   $(".popup__wrapper, .callback__form--popup").on("click", function(e) {
