@@ -181,15 +181,6 @@
   }
 }
 
-@media screen and (max-width: 766px) {
-  .grid__item {
-    width: 100%;
-  }
-  .services__header {
-    height: auto;
-  }
-}
-
 @media screen and (max-width: 660px) {
   .section__content {
     flex-direction: column;
@@ -273,6 +264,9 @@
   .callback__form {
     width: 100%;
     min-width: 0;
+  }
+  .grid__item {
+    width: 100%;
   }
 }
 
