@@ -53,6 +53,9 @@
   font-size: $space-md;
   line-height: $space-md + 5px;
   height: 65px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .services__wrapper::before {
